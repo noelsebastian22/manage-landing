@@ -18,7 +18,11 @@
     <header class="primary-header">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#"><img src="images/logo.svg" alt="Manage" /></a>
+          <a href="#">
+            <svg class="logo" width="146" height="24">
+              <use xlink:href="images/logo.svg#logo"></use>
+            </svg>
+          </a>
           <button
             class="mobile-nav-toggle"
             aria-controls="primary-navigation"
@@ -26,13 +30,13 @@
           >
             <img
               class="icon-hamburger"
-              src="./images/icon-hamburger.svg"
+              src="images/icon-hamburger.svg"
               alt=""
               aria-hidden="true"
             />
             <img
               class="icon-close"
-              src="./images/icon-close.svg"
+              src="images/icon-close.svg"
               alt=""
               aria-hidden="true"
             />
@@ -82,7 +86,7 @@
               <h2 class="fs-secondary-heading fw-bold">
                 What’s different about Manage?
               </h2>
-              <p data-width="wide">
+              <p>
                 Manage provides all the functionality your team needs, without
                 the complexity. Our software is tailor-made for modern digital
                 product teams.
@@ -90,8 +94,8 @@
             </div>
             <div>
               <ul class="numbered-items | flow" role="list">
-                <div class="flow" style="--flow-spacer: 1.5em">
-                  <li>
+                <li>
+                  <div class="flow" style="--flow-spacer: 1em">
                     <h3 class="fs-600 fw-bold">Track company-wide progress</h3>
                     <p data-width="wide">
                       See how your day-to-day tasks fit into the wider vision.
@@ -99,10 +103,10 @@
                       way done to the smallest of details. Never lose sight of
                       the bigger picture again.
                     </p>
-                  </li>
-                </div>
-                <div class="flow" style="--flow-spacer: 1em">
-                  <li>
+                  </div>
+                </li>
+                <li>
+                  <div class="flow" style="--flow-spacer: 1em">
                     <h3 class="fs-600 fw-bold">Advanced built-in reports</h3>
                     <p data-width="wide">
                       Set internal delivery estimates and track progress toward
@@ -110,10 +114,10 @@
                       out the reports you need to keep key stakeholders
                       informed.
                     </p>
-                  </li>
-                </div>
-                <div class="flow" style="--flow-spacer: 1em">
-                  <li>
+                  </div>
+                </li>
+                <li>
+                  <div class="flow" style="--flow-spacer: 1em">
                     <h3 class="fs-600 fw-bold">
                       Everything you need in one place
                     </h3>
@@ -122,8 +126,8 @@
                       store files, track tasks and share documents. Manage
                       offers an all-in-one team productivity solution.
                     </p>
-                  </li>
-                </div>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -136,15 +140,15 @@
         <button class="button">Get Started</button>
       </section>
 
-      <section class="cta | bg-accent-400 text-neutral-100 padding-block-900">
+      <section class="cta | padding-block-900 bg-accent-400 text-neutral-100">
         <div class="container">
-          <div class="even-columns">
+          <div class="even-columns vertical-align-center">
             <div>
-              <p class="fs-secondary-heading fw-bold">
+              <p class="fs-primary-heading fw-bold">
                 Simplify how your team works today.
               </p>
             </div>
-            <div>
+            <div class="justify-self-end-md">
               <button class="button" data-type="inverted">Get Started</button>
             </div>
           </div>
@@ -152,26 +156,72 @@
       </section>
     </main>
 
-    <footer class="padding-block-700 bg-neutral-900 text-neutral-100">
+    <footer
+      class="primary-footer | padding-block-700 bg-neutral-900 text-neutral-100"
+    >
       <div class="container">
-        <div class="even-columns">
-          <div>
-            <a href="#"><img src="images/logo.svg" alt="Manage" /></a>
-            <ul role="list" aria-label="Social links">
-              <li><a aria-label="facebook" href="#"></a></li>
-              <li><a aria-label="youtube" href="#"></a></li>
-              <li><a aria-label="twitter" href="#"></a></li>
-              <li><a aria-label="pinterest" href="#"></a></li>
-              <li><a aria-label="instragram" href="#"></a></li>
+        <div class="primary-footer-wrapper">
+          <div class="primary-footer-logo-social">
+            <a href="#" aria-label="home">
+              <svg class="logo" width="146" height="24">
+                <use xlink:href="images/logo.svg#logo"></use>
+              </svg>
+            </a>
+
+            <ul class="social-list" role="list" aria-label="Social links">
+              <li>
+                <a aria-label="facebook" href="#">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="images/social-icons.svg#icon-facebook"
+                    ></use></svg
+                ></a>
+              </li>
+              <li>
+                <a aria-label="youtube" href="#">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="images/social-icons.svg#icon-youtube"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a aria-label="twitter" href="#">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="images/social-icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a aria-label="pinterest" href="#">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="images/social-icons.svg#icon-pinterest"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a aria-label="instragram" href="#">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="images/social-icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
-          <div>
+          <div class="primary-footer-nav">
             <nav class="footer-nav">
               <ul
-                aria-label="Footer"
-                role="list"
                 class="flow"
                 style="--flow-spacer: 1em"
+                aria-label="Footer"
+                role="list"
               >
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pricing</a></li>
@@ -183,12 +233,12 @@
               </ul>
             </nav>
           </div>
-          <div>
+          <div class="primary-footer-form">
             <form action="">
               <input type="email" />
-              <button class="button">Go</button>
-              <p>Copyright 2020. All Rights Reserved</p>
+              <button class="button" data-shadow="none">Go</button>
             </form>
+            <p>Copyright 2020. All Rights Reserved</p>
           </div>
         </div>
       </div>
